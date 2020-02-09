@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--xml version="1.0" encoding="UTF-8"-->
+<INI>
+	<RULES>
+		<XPATH name="Аутентификационная информация">/IE/content_IE/document/@doc_id[/IE/pasp_IE/char_set/char_group/char/@value="PSWD"]</XPATH>
+		<XPATH name="Брак ">/IE/content_IE/document/@doc_id[/IE/process/@process_id[../@result="1"]]</XPATH>
+		<XPATH name="Все данные с приоритетом=0">/IE/content_IE/document/@doc_id[/IE/pasp_IE/char_set[@name="information"]/char_group[@name="indication"]/char[@name="indication_priority" and @value="0"]/@value]</XPATH>
+		<XPATH name="Все данные">/IE/content_IE/document/@doc_id[../body/@size !="0"]</XPATH>
+		<XPATH name="Декодированные факсимильные сеансы (BMP+JPEG+TIFF)">/IE/content_IE/document/@doc_id[../char_set/char_group/char/@value="BMP" or ../char_set/char_group/char/@value="JPEG" or ../char_set/char_group/char/@value="TIFF"][../body/@size !="0"]</XPATH>
+		<XPATH name="Запароленные архивы">/IE/content_IE/document/@doc_id[/IE/pasp_IE/char_set/char_group/char/@value="CRYPT"][../body/@size !="0"]</XPATH>
+		<XPATH name="Речевые сеансы VoIP">/IE/content_IE/document/@doc_id[../char_set/@name="wav"][../body/@size !="0"]</XPATH>
+		<XPATH name="Большие архивы">/IE/content_IE/document/@doc_id[../char_set/char_group/char/@value="APPLICATION/HUGE-ARCHIVE"]</XPATH>
+		<XPATH name="Неизвестные типы транспортного кодирования в HTTP">/IE/content_IE/document/@doc_id[../char_set/char_group/char/@value="UNC_TE"][../body/@size !="0"]</XPATH>
+		<XPATH name="Неизвестные типы кодирования содержимого в HTTP">/IE/content_IE/document/@doc_id[../char_set/char_group/char/@value="UNC_CE"][../body/@size !="0"]</XPATH>
+		<XPATH name="Отобранные сеансы по indication">/IE[pasp_IE/char_set[@name="information"]/char_group/char[@name="indication_id"]/@value]/content_IE/document/@doc_id[../body/@size !="0"]</XPATH>
+		<XPATH name="Отобранные сеансы">/IE[pasp_IE/char_set[@name="place"]/char_group/char[@name="LID" and @value!="0"]]/content_IE/document/@doc_id[../body/@size !="0"]</XPATH>
+		<XPATH name="Отобранные и привязанные сеансы">/IE[pasp_IE[char_set[@name="information"]/char_group/char[@name="indication_id"]/@value]/char_set[@name="service"]/char_group/char[@name="ident_type" and (@value="IMSI" or @value="IMEI" or @value="MSISDN" or @value="LOGIN")]]/content_IE/document/@doc_id[../body/@size !="0"]</XPATH>
+                <XPATH name="Сеансы VoIP">/IE/content_IE/document/@doc_id[../char_set/char_group/char/@value="M-RTP-STRM"][../body/@size !="0"]</XPATH>
+		<XPATH name="Сеансы VPN">/IE/content_IE/document/@doc_id[../char_set/char_group/char/@value="VPN_IPSEC" or ../char_set/char_group/char/@value="VPN_L2TP" or ../char_set/char_group/char/@value="VPN_PPTP" or ../char_set/char_group/char/@value="VPN_BNE" or ../char_set/char_group/char/@value="VPN_SHIVA"][../body/@size !="0"]</XPATH>
+		<XPATH name="Отобранные сеансы по базе признаков 1">/IE/content_IE/document/@doc_id[/IE/pasp_IE/char_set[@name="information"]/char_group[@name="indication"]/char[@name="indication_type"]/@value="WORD" and (not(/IE/pasp_IE/char_set[@name="information"]/char_group[@name="indication"]/char[@name="db"]) or /IE/pasp_IE/char_set[@name="information"]/char_group[@name="indication"]/char[@name="db"]/@value="1")]</XPATH>
+                <XPATH name="Отобранные сеансы по базе признаков 2">/IE/content_IE/document/@doc_id[/IE/pasp_IE/char_set[@name="information"]/char_group[@name="indication"]/char[@name="indication_type"]/@value="WORD" and /IE/pasp_IE/char_set[@name="information"]/char_group[@name="indication"]/char[@name="db"]/@value="2"]</XPATH>
+	</RULES>
+        <RULES_PALLADIUM>
+		<XPATH name="Аутентификационная информация">/ie[pasp/svc/id_pswd]/cont/doc/@id</XPATH>
+		<XPATH name="Брак ">/ie/cont/doc/@id[/ie/proc/@id[../@res="1"]]</XPATH>
+		<XPATH name="Все данные">/ie/cont/doc/@id[../body/@s!="0"]</XPATH>
+		<XPATH name="Отобранные сеансы по indication">/ie[pasp/inf/ind/@id]/cont/doc/@id[../body/@s!="0"]</XPATH>
+		<XPATH name="Отобранные сеансы">/ie[pasp/plc/ch[@lid!="0"]]/cont/doc/@id[../body/@s!="0"]</XPATH>
+		<XPATH name="Отобранные и привязанные сеансы">/ie[pasp/inf/ind/@id and (pasp/svc/id_imsi or pasp/svc/id_imei or pasp/svc/id_msisdn or pasp/svc/id_login)]/cont/doc/@id[../body/@s!="0"]</XPATH>
+        </RULES_PALLADIUM>
+</INI>

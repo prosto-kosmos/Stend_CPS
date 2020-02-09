@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--xml version="1.0" encoding="UTF-8"-->
+<INI>
+	<RULES>
+		<XPATH name="Тип последнего файла">/IE/content_IE/document[last()]/char_set[@name="file"]/char_group[@name="info"]/char[@name="type"]/@value</XPATH>
+		<XPATH name="Тип протокола">/IE/pasp_IE/char_set[@name="service"]/char_group[@name="protocol"]/char[@name="protocol"]/@value</XPATH>
+		<XPATH name="Значение PID">/IE/pasp_IE/char_set[@name="place"]/char_group[@name="channel"]/char[@name="PID"]/@value</XPATH>
+		<XPATH name="Сработавший признак">/IE/pasp_IE/char_set[@name="information"]/char_group[@name="indication"]/char[@name="indication_value"]/@value</XPATH>
+		<XPATH name="Подкаталог отбора">/IE/process[last()]/char_set[@name="info"]/char_group[@name="directory"]/char[@name="subdirectory"]/@value</XPATH>
+		<XPATH name="Подкаталог отбора по базе признаков 1">/IE/process[last()]/char_set[@name="info" and (not(./char_group[@name="directory"]/char[@name="db"]) or ./char_group[@name="directory"]/char[@name="db"]/@value = "1")]/char_group[@name="directory"]/char[@name="subdirectory"]/@value</XPATH>
+		<XPATH name="Подкаталог отбора по базе признаков 2">/IE/process[last()]/char_set[@name="info" and ./char_group[@name="directory"]/char[@name="db"]/@value = "2"]/char_group[@name="directory"]/char[@name="subdirectory"]/@value</XPATH>
+	</RULES>
+        <RULES_PALLADIUM>
+		<XPATH name="Тип последнего файла">/ie/cont/doc[last()]/file/inf/@t</XPATH>
+		<XPATH name="Тип протокола">/ie/pasp/svc/proto/@v</XPATH>
+		<XPATH name="Значение PID">/ie/pasp/plc/ch/@pid</XPATH>
+		<XPATH name="Сработавший признак">/ie/pasp/inf/ind/@v</XPATH>
+		<XPATH name="Подкаталог отбора">/ie/proc[last()]/inf/directory/subdirectory/@v</XPATH>
+	</RULES_PALLADIUM>
+</INI>

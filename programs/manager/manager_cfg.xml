@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--xml version="1.0" encoding="UTF-8"-->
+<INI rootdir="c:\stend\Conveer\" errordir="c:\stend\Out\Errors" outputdir="c:\stend\Out\" programsdir="c:\stend\Programs\" tempprogramsdir="c:\stend\tmp">
+	<COMMON integrity="True" autostart="1" hasoutputsubdir="False" replaceinsubdirsymbol="True" countseansoutputsubdir="1000" archive_count="1" countseansarchivsubdir="1000" repaintconnect="2" repaintstatistic="2" repaintmonitoring="2" phisical_mem_shaping_on="95" phisical_mem_shaping_off="90" virtual_mem_shaping_on="95" virtual_mem_shaping_off="90" />
+	<WORK countconnections="1" buffersizedefault="30" keepalivedefault="300" keepaliveport="10105" max_return_count="2" />
+	<MESSAGES countlines="500" logfilemanager="True" status0="True" status3="True" logfileprocesses="True" />
+	<EXCHANGE exchange_domain="max" autostartget="False" autostartsend="True" periodsend="2" maxresiveseans="300" countconnections="1" />
+	<INPUTS>
+		<INPUT name="in_test" imageindex="30" queuename="test" extention="*.xml" level="5" start="True" directory="c:\stend\test_input" />
+	</INPUTS>
+	<PROCESSES>
+		<PROCESS name="test" imageindex="25" amount="1" keepalive="100" buffersize="100" separatorcount="1" exefile="c:\stend\project\bin\Debug\cps.exe" parameters="" config="" level="2">
+			<XPATH name="Все данные" continue="False" output_type="directory" fsionly="False" subdirectory="False" type="True" subpriority="False" process="" addrulename="" directory="c:\stend\test_output\" watchtime="0" />
+		</PROCESS>
+	</PROCESSES>
+	<PROCESSOTHER />
+</INI>

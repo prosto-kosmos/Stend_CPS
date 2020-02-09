@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<ie prty="0" uie="pal_v9_test">
+<rel/>
+<pasp>
+<svc>
+<proto v="http_"/>
+<id_ip v="192.168.000.082" d="c" id="6"/>
+<id_port v="05060" d="c" id="7"/>
+<id_ip v="192.168.001.092" d="a" id="8"/>
+<id_port v="53146" d="a" id="9"/>
+<id_ip v="192.168.001.092" d="c" id="10"/>
+<id_port v="40036" d="c" id="11"/>
+<id_ip v="192.168.000.082" d="a" id="12"/>
+<id_port v="11552" d="a" id="13"/>
+</svc>
+<plc>
+<ch pid="0" lid="0"/>
+</plc>
+<inf>
+<ind t="word" v="&quot;MjMz&quot;" id="52" id_ext="10305" proc_id="1"/>
+</inf>
+</pasp>
+<cont>
+<doc proc_id="1" id="1" s_tm="2018-09-17T10:57:54" f_tm="2018-09-17T10:58:59">
+<file>
+<inf orig_f="5ODt7fvlXzAwMS5NLVJUUC1TVFJN" t="rtp" d="c" act="звонок"/>
+</file>
+<body fn="pal_v9_test.dat" s="1000" ext="1"/>
+</doc>
+<doc proc_id="2" id="2" s_tm="2018-09-17T12:57:54" f_tm="2018-09-17T12:58:59">
+<file>
+<inf orig_f="5ODt7fvlXzAwMS5NLVJUUC1TVFJN" t="rtp" d="c" act="звонок2"/>
+</file>
+<body fn="pal_v9_test2.dat" s="1000" ext="1"/>
+</doc>
+</cont>
+<proc res="0" id="1" s_tm="2018-09-17T10:58:59" f_tm="2018-09-17T10:58:59" method="TCP_COLLECTION" exec_t="P" exec="WRHG" div="P" subdiv="00" prty="0" qlt="100"/>
+<proc res="0" id="2" s_tm="2018-09-17T12:58:59" f_tm="2018-09-17T12:58:59" method="TCP_COLLECTION" exec_t="P" exec="WRHG" div="P" subdiv="00" prty="0" qlt="100"/>
+</ie>

@@ -1,0 +1,141 @@
+# depslib dependency file v1.0
+1558454458 source:c:\users\admin\desktop\cps\pugixml.cpp
+	"pugixml.hpp"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<assert.h>
+	<limits.h>
+	<wchar.h>
+	<math.h>
+	<float.h>
+	<istream>
+	<ostream>
+	<string>
+	<new>
+	<stdint.h>
+
+1558454458 c:\users\admin\desktop\cps\pugixml.hpp
+	"pugiconfig.hpp"
+	<stddef.h>
+	<exception>
+	<iterator>
+	<iosfwd>
+	<string>
+
+1558454458 c:\users\admin\desktop\cps\pugiconfig.hpp
+
+1574170094 source:c:\users\admin\desktop\cps\main.cpp
+	<iostream>
+	<windows.h>
+	<winuser.h>
+	<conio.h>
+	<string>
+	<fstream>
+	"pugixml.hpp"
+
+1574179398 source:j:\cpsdata\today(november19)cps\cps_cb\main.cpp
+	<iostream>
+	<windows.h>
+	<winuser.h>
+	<conio.h>
+	<string>
+	<fstream>
+	"pugixml.hpp"
+
+1574179398 j:\cpsdata\today(november19)cps\cps_cb\pugixml.hpp
+	"pugiconfig.hpp"
+	<stddef.h>
+	<exception>
+	<iterator>
+	<iosfwd>
+	<string>
+
+1574179398 j:\cpsdata\today(november19)cps\cps_cb\pugiconfig.hpp
+
+1574179398 source:j:\cpsdata\today(november19)cps\cps_cb\pugixml.cpp
+	"pugixml.hpp"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<assert.h>
+	<limits.h>
+	<wchar.h>
+	<math.h>
+	<float.h>
+	<istream>
+	<ostream>
+	<string>
+	<new>
+	<stdint.h>
+
+1580905833 source:c:\users\10из\desktop\cps_cb\main.cpp
+	<iostream>
+	<windows.h>
+	<winuser.h>
+	<conio.h>
+	<string>
+	<fstream>
+	"pugixml.hpp"
+
+1574179398 c:\users\10из\desktop\cps_cb\pugixml.hpp
+	"pugiconfig.hpp"
+	<stddef.h>
+	<exception>
+	<iterator>
+	<iosfwd>
+	<string>
+
+1574179398 c:\users\10из\desktop\cps_cb\pugiconfig.hpp
+
+1574179398 source:c:\users\10из\desktop\cps_cb\pugixml.cpp
+	"pugixml.hpp"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<assert.h>
+	<limits.h>
+	<wchar.h>
+	<math.h>
+	<float.h>
+	<istream>
+	<ostream>
+	<string>
+	<new>
+	<stdint.h>
+
+1574179398 source:c:\stend\project\pugixml.cpp
+	"pugixml.hpp"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<assert.h>
+	<limits.h>
+	<wchar.h>
+	<math.h>
+	<float.h>
+	<istream>
+	<ostream>
+	<string>
+	<new>
+	<stdint.h>
+
+1574179398 c:\stend\project\pugixml.hpp
+	"pugiconfig.hpp"
+	<stddef.h>
+	<exception>
+	<iterator>
+	<iosfwd>
+	<string>
+
+1574179398 c:\stend\project\pugiconfig.hpp
+
+1581100907 source:c:\stend\project\main.cpp
+	<iostream>
+	<windows.h>
+	<winuser.h>
+	<conio.h>
+	<string>
+	<fstream>
+	"pugixml.hpp"
+
